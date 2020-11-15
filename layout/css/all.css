@@ -12,13 +12,21 @@ html {
 body {
   margin: 0;
   overflow-x: hidden;
-  background-color: #ccc;
+  background-color: #FAFAFA;
+  font-family: Titillium Web;
 }
 
 html,
 body,
 .container {
   height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1600px;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 p, h1, h2, h3 {
@@ -40,4 +48,162 @@ button,
 input {
   border: 0;
   margin: 0;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+.header {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+.header__access {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.header__access div {
+  display: flex;
+  align-items: center;
+}
+
+.header__access--icon {
+  margin-right: 10px;
+}
+
+.header__access--minicart {
+  border: 1px solid #FAA500;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.header__autocomplete {
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 50%;
+}
+
+.header__autocomplete input {
+  background-color: #EFEFEF;
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+}
+
+.header__autocomplete--button {
+  background-color: #FAA500;
+  border-radius: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 119px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+.header__hintbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #353535;
+}
+
+.header__hintbar p {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  padding: 5px 0;
+}
+
+.header__logo {
+  max-width: 147px;
+}
+
+.header__logo img {
+  width: 100%;
+}
+
+.header__menu {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 769px) {
+  .header__menu {
+    height: 50px;
+  }
+}
+
+.header__menu--links {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header__menu--links li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header__menu--links li:last-child > a {
+  text-transform: uppercase;
+}
+
+.header__menu--links li a {
+  font-size: 14px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+  transition: 0.2s;
+}
+
+.header__menu--links li a:hover {
+  color: #FAA500;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+@media screen and (min-width: 769px) {
+  .header__menu--links li a {
+    width: 146px;
+  }
+}
+
+.header__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  padding: 24px 0;
+}
+
+.header__wrapper .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }

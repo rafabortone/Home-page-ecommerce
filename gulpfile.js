@@ -33,7 +33,7 @@ function watchFiles() {
   gulp.watch("./layout/sass/**/*.scss", css);
   gulp.watch("./layout/js/**/*.js").on('change', browsersync.reload);
   gulp.watch('./layout/*.html').on('change', browsersync.reload);
-   gulp.watch('./layout/pug/**/*.pug').on('change', views);
+  gulp.watch('./layout/pug/**/*.pug').on('change', views);
 }
 
 const watch = gulp.parallel(watchFiles, browserSync, css, views);

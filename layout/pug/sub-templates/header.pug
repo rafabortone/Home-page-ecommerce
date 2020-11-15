@@ -1,0 +1,41 @@
+header.header
+  .header__hintbar
+    p Acompanhe as melhores promoções disponíveis aqui na Maeztra.
+  .header__wrapper
+    .container
+      .header__logo
+        img(src="../../images/logo.png", alt="")
+      .header__autocomplete
+        input(type="text")
+        .header__autocomplete--button
+          | buscar 
+      .header__access
+        .header__access--account
+          .header__access--icon
+            include ../../icons/icon-account.pug
+          a(href="") minha conta 
+        .header__access--wishlist
+          .header__access--icon
+            include ../../icons/icon-heart.pug
+          a(href="") minha lista
+        .header__access--minicart
+          .header__access--icon
+            include ../../icons/icon-sacola.pug
+          span meu carrinho
+
+  nav.header__menu
+    .container
+      ul.header__menu--links
+        li
+          a(href="") novidades
+        li
+          a(href="") vestidos
+        li
+          a(href="") roupas
+        li
+          a(href="") lingerie
+        li
+          a(href="") acessórios
+        li
+          a(href="") outlet
+
