@@ -7,6 +7,10 @@ $('.header__icons--search, .header__autocomplete').click(function () {
   $('.header__autocomplete').toggleClass('header__autocomplete--active');
 })
 
+$('.footer__menu--title').click(function () {
+  const $this = $(this);
+  $this.next($('.footer__menu--links')).toggleClass('footer__menu--links--active')
+})
 
 $('.header__menu--wrapper, .header__autocomplete--inputs').click(function (e) {
   e.preventDefault();
