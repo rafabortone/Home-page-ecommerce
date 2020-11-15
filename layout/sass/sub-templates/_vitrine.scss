@@ -1,0 +1,27 @@
+.shelf {
+  &__list {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding: 10px;
+
+    &--content {
+      max-width: 307px;
+    }
+  }
+
+  &__wrapper{
+    max-width: 1600px;
+    margin: auto;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
+  }
+}

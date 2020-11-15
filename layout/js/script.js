@@ -1,28 +1,27 @@
-//header
-$('.header__iconmenu, .header__menu').click(function () {
-  $('.header__menu').toggleClass('header__menu--active');
-})
-
-$('.header__icons--search, .header__autocomplete').click(function () {
-  $('.header__autocomplete').toggleClass('header__autocomplete--active');
-})
-
-
-$('.header__menu--wrapper, .header__autocomplete--inputs').click(function (e) {
-  e.preventDefault();
-  e.stopPropagation();
-})
-
-//footer
-$('.footer__menu--title').click(function () {
-  const $this = $(this);
-  $this.next($('.footer__menu--links')).toggleClass('footer__menu--links--active')
-})
-
-
-//banner
 $(document).ready(function () {
-  
+  //header
+  $('.header__iconmenu, .header__menu').click(function () {
+    $('.header__menu').toggleClass('header__menu--active');
+  })
+
+  $('.header__icons--search, .header__autocomplete').click(function () {
+    $('.header__autocomplete').toggleClass('header__autocomplete--active');
+  })
+
+
+  $('.header__menu--wrapper, .header__autocomplete--inputs').click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+  })
+
+  //footer
+  $('.footer__menu--title').click(function () {
+    const $this = $(this);
+    $this.next($('.footer__menu--links')).toggleClass('footer__menu--links--active')
+  })
+
+
+  //banner
   const sliderPrincipal = $('#home__banner--slider')
   if (sliderPrincipal.length) {
     sliderPrincipal.slick({
@@ -32,14 +31,58 @@ $(document).ready(function () {
       arrows: true,
     })
   }
-    
+
   const sliderPrincipalMobile = $('#home__banner--slider--mobile')
   if (sliderPrincipalMobile.length) {
-    console.log('oppaaa');
     sliderPrincipalMobile.slick({
       autoplay: false,
       dots: true,
       arrows: true,
     })
   }
+
+  const sliderShelfHome = $('#shelf-list')
+  if (sliderShelfHome.length) {
+    sliderShelfHome.slick({
+      arrows: true,
+      dots: false,
+      infinite: true,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      variableWidth: true,
+      responsive: [{
+          breakpoint: 1599,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 3,
+          }
+        },
+        {
+          breakpoint: 1200,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+          }
+
+        },
+        {
+          breakpoint: 769,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false,
+            slidesToShow: 1,
+            slidesToScroll: 1
+          },
+        },
+      ]
+    })
+
+  }
+
 })

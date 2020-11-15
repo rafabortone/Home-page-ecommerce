@@ -1,7 +1,5 @@
 .home {
   width: 100%;
-  display: flex;
-  justify-content: center;
 
   &__banner {
     width: 100%;
@@ -12,6 +10,19 @@
       }
     }
   }
+
+  &__shelf {
+    width: 100%;
+
+    &--wrapper {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
 
   .mobile {
     display: flex;
