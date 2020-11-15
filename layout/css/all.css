@@ -68,6 +68,7 @@
   top: 45%;
   transform: translateY(-50%);
   width: 32px;
+  cursor: pointer;
 }
 
 .slick-prev {
@@ -157,13 +158,15 @@ a {
 }
 
 button,
-input {
+input,
+li {
   border: 0;
   margin: 0;
 }
 
 button:focus,
-input:focus {
+input:focus,
+li:focus {
   outline: none;
 }
 
@@ -689,6 +692,7 @@ input:focus {
   color: #ffffff;
   border-radius: 4px;
   padding: 8px 0;
+  cursor: pointer;
 }
 
 .shelf__item--content {
