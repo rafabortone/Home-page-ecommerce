@@ -16,6 +16,23 @@ html(lang='en')
 
   body
     include ./sub-templates/header.pug
+    .home
+      .home__banner
+        #home__banner--slider.desktop
+          .box-banner
+            a(href="#")
+              img(src="../../images/banner-principal-desktop.png")
+          .box-banner
+            a(href="#")
+              img(src="../../images/banner-principal-desktop.png")
+        #home__banner--slider--mobile.mobile
+          .box-banner
+            a(href="#")
+              img(src="../../images/banner-principal-mobile.png")
+          .box-banner
+            a(href="#")
+              img(src="../../images/banner-principal-mobile.png")
+
     
     include ./sub-templates/footer.pug
 

@@ -1,0 +1,29 @@
+.home {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  &__banner {
+    width: 100%;
+
+    .slick-slide {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .mobile {
+    display: flex;
+    @media screen and(min-width: 769px) {
+      display: none;
+    }
+  }
+
+  .desktop {
+    display: none;
+    @media screen and(min-width: 769px) {
+      display: flex;
+    }
+  }
+}
