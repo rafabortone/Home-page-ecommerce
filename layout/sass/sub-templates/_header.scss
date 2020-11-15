@@ -49,15 +49,35 @@
   }
 
   &__autocomplete {
-    position: relative;
-    display: flex;
+    position: fixed;
+    display: none;
     width: 100%;
-    max-width: 50%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 120px;
+    left: 0;
+    padding: 16px;
+    @media screen and(min-width: 769px) {
+      display: flex;
+      position: initial;
+      padding: 0;
+      max-width: 50%;
+    }
+
+    &--active {
+      display: block;
+    }
+
+    &--inputs {
+      width: 100%;
+      position: relative;
+    }
     input {
       background-color: $c-gray01;
       border-radius: 10px;
       padding:16px;
       width: 100%;
+      font-size: 12px;
     }
 
     &--button {
@@ -68,7 +88,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 119px;
+      width:80px;
       height: 100%;
       position: absolute;
       right: 0;
@@ -76,6 +96,9 @@
       text-transform: capitalize;
       font: {
         size: 14px;
+      }
+      @media screen and(min-width:769px) {
+        width: 119px;
       }
     }
   }

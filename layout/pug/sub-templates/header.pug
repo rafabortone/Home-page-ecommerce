@@ -7,10 +7,11 @@ header.header
         include ../../icons/icon-menu.pug
       .header__logo
         img(src="../../images/logo.png", alt="")
-      .header__autocomplete.desktop
-        input(type="text")
-        .header__autocomplete--button
-          | buscar 
+      .header__autocomplete
+        .header__autocomplete--inputs
+          input(type="text")
+          .header__autocomplete--button
+            | buscar 
       .header__access.desktop
         .header__access--account
           .header__access--icon
@@ -25,9 +26,9 @@ header.header
             include ../../icons/icon-sacola.pug
           span meu carrinho
       .header__icons.mobile
-        .header__icons--icon
+        .header__icons--search
           include ../../icons/icon-search.pug
-        .header__icons--icon
+        .header__icons--sacola
           include ../../icons/icon-sacola.pug
 
 
@@ -61,5 +62,5 @@ header.header
               include ../../icons/icon-heart.pug
             | minha lista
     .header__menu--close
-      
+
 
