@@ -1,0 +1,31 @@
+.tipbar {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    li {
+      padding: 0 10px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    padding: 21px 0;
+    h2 {
+      font: {
+        size: 16px;
+      };
+    }
+  }
+}
+
+.marcas {
+  &__title {
+    text-align: center;
+    padding: 21px 0;
+  }
+}

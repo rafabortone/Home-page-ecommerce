@@ -758,3 +758,33 @@ li:focus {
 .shelf .slick-prev {
   left: 0;
 }
+
+.tipbar {
+  width: 100%;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.tipbar__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 70px;
+}
+
+.tipbar__list li {
+  padding: 0 10px;
+}
+
+.tipbar__title {
+  text-align: center;
+  padding: 21px 0;
+}
+
+.tipbar__title h2 {
+  font-size: 16px;
+}
+
+.marcas__title {
+  text-align: center;
+  padding: 21px 0;
+}

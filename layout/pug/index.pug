@@ -16,7 +16,7 @@ html(lang='en')
   body
     include ./sub-templates/header.pug
     .home
-      .home__banner
+      section.home__banner
         #home__banner--slider.desktop
           .box-banner
             a(href="#")
@@ -32,7 +32,17 @@ html(lang='en')
             a(href="#")
               img(src="../../images/banner-principal-mobile.png")
 
-      .shelf
+      section.tipbar
+        .tipbar__title
+          h2 Por que coprar na Maeztra?
+        include ./sub-templates/tipbar.pug
+
+      section.tipbar.marcas
+        .marcas__title
+          h2 Marcas Parceiras
+        include ./sub-templates/marcas.pug
+
+      section.shelf
         .shelf__wrapper
           .shelf__title
             h2 As Mais Pedidas
