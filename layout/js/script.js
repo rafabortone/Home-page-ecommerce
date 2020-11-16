@@ -8,8 +8,8 @@ $(document).ready(function () {
     $('.header__autocomplete').toggleClass('header__autocomplete--active');
   })
 
-
-  $('.header__menu--wrapper, .header__autocomplete--inputs').click(function (e) {
+//stopPropagatiion
+  $('.header__menu--wrapper, .header__autocomplete--inputs, .modal-newsletter__wrapper').click(function (e) {
     e.preventDefault();
     e.stopPropagation();
   })
@@ -170,5 +170,9 @@ $(document).ready(function () {
     })
 
   }
+
+  $('.modal-newsletter').click(function () {
+    $(this).hide();
+  })
 
 })

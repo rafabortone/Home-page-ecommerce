@@ -854,18 +854,22 @@ li:focus {
   border-color: #EFEFEF;
 }
 
+.newsletter form {
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .newsletter form {
+    width: 40%;
+    margin: 0;
+  }
+}
+
 .newsletter__inputs {
   display: flex;
   width: 100%;
   position: relative;
   margin-top: 10px;
-}
-
-@media screen and (min-width: 769px) {
-  .newsletter__inputs {
-    width: 40%;
-    margin: 0;
-  }
 }
 
 .newsletter__input {
@@ -910,4 +914,114 @@ li:focus {
     justify-content: space-around;
     align-items: center;
   }
+}
+
+.modal-newsletter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 16px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+  background-color: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+}
+
+.modal-newsletter__wrapper {
+  display: flex;
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 848px;
+  min-height: 300px;
+}
+
+.modal-newsletter__banner, .modal-newsletter__info {
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-newsletter__banner, .modal-newsletter__info {
+    width: 50%;
+  }
+}
+
+.modal-newsletter__banner {
+  overflow: hidden;
+  display: none;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-newsletter__banner {
+    display: block;
+  }
+}
+
+.modal-newsletter__banner img {
+  height: 102%;
+}
+
+.modal-newsletter__form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  width: 100%;
+}
+
+.modal-newsletter__form input {
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+  .modal-newsletter__form {
+    padding: 40px;
+  }
+}
+
+.modal-newsletter__input {
+  border: 1px solid #C4C4C4;
+  margin-bottom: 12px;
+}
+
+.modal-newsletter__button {
+  background-color: #FAA500;
+  color: #ffffff;
+}
+
+.modal-newsletter__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-newsletter__text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-newsletter__text p {
+  text-transform: uppercase;
+  padding: 17px 0;
+  font-size: 12px;
+}
+
+.modal-newsletter__text span {
+  font-size: 16px;
+  color: #787D83;
+}
+
+.modal-newsletter__text strong {
+  font-size: 16px;
+  color: #787D83;
 }
