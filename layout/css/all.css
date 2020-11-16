@@ -845,3 +845,69 @@ li:focus {
   text-align: center;
   padding: 21px 0;
 }
+
+.newsletter {
+  width: 100%;
+  border-top: 2px;
+  border-bottom: 2px;
+  border-style: solid;
+  border-color: #EFEFEF;
+}
+
+.newsletter__inputs {
+  display: flex;
+  width: 100%;
+  position: relative;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 769px) {
+  .newsletter__inputs {
+    width: 40%;
+    margin: 0;
+  }
+}
+
+.newsletter__input {
+  width: 100%;
+  height: 100%;
+  padding: 10px 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 4px;
+}
+
+.newsletter__button {
+  background-color: #FAA500;
+  width: 80px;
+  height: 100%;
+  color: #ffffff;
+  position: absolute;
+  right: 0;
+  border-radius: 0 4px 4px 0;
+  box-sizing: border-box;
+  border-top: 1px;
+  border-right: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #000000;
+}
+
+.newsletter__wrapper {
+  width: 100%;
+  max-width: 1600px;
+  padding: 20px 16px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 769px) {
+  .newsletter__wrapper {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
